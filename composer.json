@@ -1,0 +1,50 @@
+{
+  "name": "codespb/laravel-podcast-feed",
+  "description": "Podcast builder for Laravel. Package inherits torann/podcastfeed which is no longer maintained and is not compatible with the latest Laravel version.",
+  "license": "MIT",
+  "keywords": [
+    "podcast",
+    "feed",
+    "itunes"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "Dmitriy Belyaev",
+      "email": "admin@codespb.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "illuminate/support": "^6.0|^7.0|^8.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^4.0|^5.0|^6.0",
+    "phpunit/phpunit": "^8.4|^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "CodeSPB\\LaravelPodcastFeed\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CodeSPB\\LaravelPodcastFeed\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "CodeSPB\\LaravelPodcastFeed\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}

@@ -1,6 +1,6 @@
 <?php
 
-namespace CodeSPB\PodcastFeed\Facades;
+namespace CodeSPB\LaravelPodcastFeed\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
